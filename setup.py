@@ -9,6 +9,7 @@ setup(
     author=ssaiw.__author__,
     url=ssaiw.__url__,
     license='Apache Licence 2.0',
+    packages=['ssaiw'],
     entry_points={
         'console_scripts': [
             'ssaiw=ssaiw:wrap',
