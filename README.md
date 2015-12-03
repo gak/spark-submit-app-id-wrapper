@@ -11,7 +11,6 @@ prints it to stderr, so that your calling script can process it.
 The log output is at the same time redirected to stdout, so you can still see
 what is happening if needed.
 
-
 The arguments to the app is your spark-submit command, e.g.:
 ```
 # ssaiw spark-submit --master yarn-cluster --class etc etc > /dev/null
