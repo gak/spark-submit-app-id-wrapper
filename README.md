@@ -4,7 +4,8 @@
 
 A wrapper around spark-submit, specifically tested with YARN, to intercept and
 extract the appliation id from stderr. Once the application id is detected, it
-prints it to stderr, so that your calling script can process it.
+prints it to stderr, exits with a return code of 0, so that your calling script
+can process it.
 
 ## Usage
 
