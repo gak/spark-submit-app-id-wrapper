@@ -18,9 +18,14 @@ import sys
 
 __version__ = '0.1.0'
 __author__ = 'Gerald Kaszuba'
+__url__ = 'https://github.com/gak/spark-submit-app-id-wrapper'
 
 
 def wrap():
+    if len(sys.argv) < 2:
+        print('Please enter the spark-submit command as the argument.')
+        sys.exit(-1)
+
     process = subprocess.Popen(
         sys.argv[1:],
         stderr=subprocess.PIPE,
@@ -33,3 +38,8 @@ def wrap():
         if match:
             print(match.groups()[0], file=sys.stderr)
             process.kill()
+            sys.exit(0)
+
+    # For whatever reason, spark-submit has quit without getting an app id
+    # This is a cause for concern.
+    sys.exit(1)
