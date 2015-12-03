@@ -5,8 +5,12 @@
 #    pip-compile requirements.in
 #
 click==6.2                # via pip-tools
+ecdsa==0.13               # via paramiko
+fabric==1.10.2
 first==2.0.1              # via pip-tools
+paramiko==1.16.0          # via fabric
 pip-tools==1.2.0
+pycrypto==2.6.1           # via paramiko
 six==1.10.0               # via pip-tools
 wheel==0.26.0
 

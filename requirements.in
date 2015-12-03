@@ -1,3 +1,4 @@
 pip-tools
 setuptools
 wheel
+fabric

@@ -13,6 +13,7 @@ import sys
 
 __version__ = '0.1.0'
 __author__ = 'Gerald Kaszuba'
+__author_email__ = 'gak@gak0.com'
 __url__ = 'https://github.com/gak/spark-submit-app-id-wrapper'
 
 
