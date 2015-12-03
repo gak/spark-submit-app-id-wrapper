@@ -1,4 +1,4 @@
-= spark-submit application id wrapper =
+# spark-submit application id wrapper
 
 A wrapper around spark-submit, specifically tested with YARN, to intercept and
 extract the appliation id from stderr. Once the application id is detected, it
