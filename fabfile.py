@@ -3,5 +3,7 @@ from fabric.operations import local
 
 
 @task
-def upload():
+def release(version):
+    local('git flow release start {}'.format(version))
     local('python setup.py bdist_wheel upload')
+    local('git flow release finish {}'.format(version))
